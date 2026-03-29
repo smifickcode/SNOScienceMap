@@ -28,7 +28,7 @@
             <li><a href="https://lectures.mephi.ru/">Лекторий МИФИ</a></li>
             <li><a href="https://t.me/snomephi_archive">Полезные материалы СНО</a></li>
             <li><a href="#">Галерея</a></li>
-            <li class="btn"><a href="#">Контакты</a></li>
+            <li class="btn"><a href="#" id="contactsBtn">Контакты</a></li>
           </ul>
         </nav>
       </header>
@@ -64,5 +64,124 @@
     <main>
     
     </main>
+  </body>
+  
+  
+         
+<div id="contactsModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>Контакты СНО НИЯУ МИФИ</h2>
+    
+    <div class="contacts-grid">
+   
+      <div class="contact-card">
+        <div class="contact-photo">
+          <img src="../img/morozova.svg" alt="Морозова София">
+        </div>
+        <div class="contact-info">
+          <h3>Председатель СНО:</h3>
+          <p class="name">Морозова София Александровна</p>
+          <p class="contact-label">Почта:</p>
+          <a href="mailto:morozova@sno.mephi.ru">SAMorozova@mephi.ru</a>
+          <p class="contact-label">Телеграмм:</p>
+          <a href="https://t.me/sofia_ma8">@sofia_ma8</a>
+        </div>
+      </div>
+
+    
+      <div class="contact-card">
+        <div class="contact-photo">
+          <img src="../img/smirnova.svg" alt="Смирнова Татьяна">
+        </div>
+        <div class="contact-info">
+          <h3>Заместитель председателя СНО:</h3>
+          <p class="name">Смирнова Татьяна Алексеевна</p>
+          <p class="contact-label">Почта:</p>
+          <a href="mailto:smirnova@sno.mephi.ru">TASmirnova@mephi.ru</a>
+          <p class="contact-label">Телеграмм:</p>
+          <a href="https://t.me/smifick">@smifick</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-photo">
+          <img src="../img/borodina.svg" alt="Бородина Агния">
+        </div>
+        <div class="contact-info">
+          <h3>Куратор СНО:</h3>
+          <p class="name">Бородина Агния Геннадьевна</p>
+          <p class="contact-label">Почта:</p>
+          <a href="mailto:borodina@mephi.ru">AGBorodina@mephi.ru</a>
+          <p class="contact-label">Телеграмм:</p>
+          <a href="https://t.me/militarytide">@militarytide</a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-photo">
+          <img src="../img/kalaeva.svg" alt="Калаева Надежда">
+        </div>
+        <div class="contact-info">
+          <h3>Заместитель председателя СНО:</h3>
+          <p class="name">Калаева Надежда Александровна</p>
+          <p class="contact-label">Почта:</p>
+          <a href="mailto:kalaeva@sno.mephi.ru">NAKalaeva@mephi.ru</a>
+          <p class="contact-label">Телеграмм:</p>
+          <a href="https://t.me/lorwefg">@lorwefg</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+         
+        </div>
+      </div>
+    </div>
+
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+  
+        const modal = document.getElementById('contactsModal');
+        const btn = document.getElementById('contactsBtn');
+        const closeBtn = document.querySelector('.close-btn');
+
+        
+        if (!modal || !btn || !closeBtn) {
+          console.warn('Элементы модального окна не найдены в HTML');
+          return;
+        }
+
+       
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          modal.classList.add('show');
+          document.body.style.overflow = 'hidden'; 
+        });
+
+        
+        closeBtn.addEventListener('click', function() {
+          modal.classList.remove('show');
+          document.body.style.overflow = '';
+        });
+
+        
+        window.addEventListener('click', function(e) {
+          if (e.target === modal) {
+            modal.classList.remove('show');
+            document.body.style.overflow = '';
+          }
+        });
+
+        
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && modal.classList.contains('show')) {
+            modal.classList.remove('show');
+            document.body.style.overflow = '';
+          }
+        });
+      });
+    </script>
   </body>
 </html>
