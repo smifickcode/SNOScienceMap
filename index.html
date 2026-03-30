@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Карта науки СНО НИЯУ МИФИ</title>
-
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
@@ -32,8 +31,21 @@
           </ul>
         </nav>
       </header>
-   
+      
       <div class="hero--info">
+        <h1 class="subtitle-main">Карта науки</h1>
+        
+        <div class="category-buttons">
+          <button class="category-btn">кафедры</button>
+          <button class="category-btn">научные работы</button>
+          <a href="https://home.mephi.ru/people" style="text-decoration: none; display: inline-block;">
+            <button class="category-btn">преподаватели</button>
+        </a>
+          <button class="category-btn">лаборатории</button>
+          <button class="category-btn">о СНО</button>
+          <button class="category-btn">конференции</button>
+        </div>
+        
         <div class="search-container">
           <form class="search-form" action="/search" method="GET">
             <input 
@@ -48,125 +60,139 @@
                 <circle cx="11" cy="11" r="8"></circle>
                 <path d="m21 21-4.35-4.35"></path>
               </svg>
-              Найти
+              <span>Найти</span>
             </button>
           </form>
         </div>
-        <h1 class="subtitle-main">Карта науки</h1>
-        <p class="subtitle-small">От студентов студентам</p>
-        <h2>Студенческое научное общество НИЯУ МИФИ</h2>
+        
+        <div class="hero-center">
+          <p class="subtitle-small">От студентов студентам</p>
+          <h2>Студенческое научное общество НИЯУ МИФИ</h2>
+        </div>
         <p>Интеллектуальное смирение перед сложностью устройства мира</p>
+        
         <button class="btn-primary">Перейти к Карте науки</button>
+        
+        <div class="scroll-arrow">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 5v14M5 12l7 7 7-7"/>
+          </svg>
+        </div>
       </div>
 
     </div>
  
     <main>
-    
+      <section class="about-section">
+        <div class="container">
+          <h2>О проекте</h2>
+          <p>Здесь может быть описание вашего научного общества, цели и задачи.</p>
+          
+          <div class="features-grid">
+            <div class="feature-card">
+              <h3>Наука</h3>
+              <p>Исследования и разработки</p>
+            </div>
+            <div class="feature-card">
+              <h3>Образование</h3>
+              <p>Лекции и семинары</p>
+            </div>
+            <div class="feature-card">
+              <h3>Сообщество</h3>
+              <p>Обмен опытом</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-  </body>
-  
-  
          
-<div id="contactsModal" class="modal">
-  <div class="modal-content">
-    <span class="close-btn">&times;</span>
-    <h2>Контакты СНО НИЯУ МИФИ</h2>
-    
-    <div class="contacts-grid">
-   
-      <div class="contact-card">
-        <div class="contact-photo">
-          <img src="../img/morozova.svg" alt="Морозова София">
-        </div>
-        <div class="contact-info">
-          <h3>Председатель СНО:</h3>
-          <p class="name">Морозова София Александровна</p>
-          <p class="contact-label">Почта:</p>
-          <a href="mailto:morozova@sno.mephi.ru">SAMorozova@mephi.ru</a>
-          <p class="contact-label">Телеграмм:</p>
-          <a href="https://t.me/sofia_ma8">@sofia_ma8</a>
-        </div>
-      </div>
+    <div id="contactsModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Контакты СНО НИЯУ МИФИ</h2>
+        
+        <div class="contacts-grid">
+          <div class="contact-card">
+            <div class="contact-photo">
+              <img src="../img/morozova.svg" alt="Морозова София">
+            </div>
+            <div class="contact-info">
+              <h3>Председатель СНО:</h3>
+              <p class="name">Морозова София Александровна</p>
+              <p class="contact-label">Почта:</p>
+              <a href="mailto:morozova@sno.mephi.ru">SAMorozova@mephi.ru</a>
+              <p class="contact-label">Телеграмм:</p>
+              <a href="https://t.me/sofia_ma8">@sofia_ma8</a>
+            </div>
+          </div>
 
-    
-      <div class="contact-card">
-        <div class="contact-photo">
-          <img src="../img/smirnova.svg" alt="Смирнова Татьяна">
-        </div>
-        <div class="contact-info">
-          <h3>Заместитель председателя СНО:</h3>
-          <p class="name">Смирнова Татьяна Алексеевна</p>
-          <p class="contact-label">Почта:</p>
-          <a href="mailto:smirnova@sno.mephi.ru">TASmirnova@mephi.ru</a>
-          <p class="contact-label">Телеграмм:</p>
-          <a href="https://t.me/smifick">@smifick</a>
-        </div>
-      </div>
+          <div class="contact-card">
+            <div class="contact-photo">
+              <img src="../img/smirnova.svg" alt="Смирнова Татьяна">
+            </div>
+            <div class="contact-info">
+              <h3>Заместитель председателя СНО:</h3>
+              <p class="name">Смирнова Татьяна Алексеевна</p>
+              <p class="contact-label">Почта:</p>
+              <a href="mailto:smirnova@sno.mephi.ru">TASmirnova@mephi.ru</a>
+              <p class="contact-label">Телеграмм:</p>
+              <a href="https://t.me/smifick">@smifick</a>
+            </div>
+          </div>
 
-      <div class="contact-card">
-        <div class="contact-photo">
-          <img src="../img/borodina.svg" alt="Бородина Агния">
-        </div>
-        <div class="contact-info">
-          <h3>Куратор СНО:</h3>
-          <p class="name">Бородина Агния Геннадьевна</p>
-          <p class="contact-label">Почта:</p>
-          <a href="mailto:borodina@mephi.ru">AGBorodina@mephi.ru</a>
-          <p class="contact-label">Телеграмм:</p>
-          <a href="https://t.me/militarytide">@militarytide</a>
-        </div>
-      </div>
+          <div class="contact-card">
+            <div class="contact-photo">
+              <img src="../img/borodina.svg" alt="Бородина Агния">
+            </div>
+            <div class="contact-info">
+              <h3>Куратор СНО:</h3>
+              <p class="name">Бородина Агния Геннадьевна</p>
+              <p class="contact-label">Почта:</p>
+              <a href="mailto:borodina@mephi.ru">AGBorodina@mephi.ru</a>
+              <p class="contact-label">Телеграмм:</p>
+              <a href="https://t.me/militarytide">@militarytide</a>
+            </div>
+          </div>
 
-      <div class="contact-card">
-        <div class="contact-photo">
-          <img src="../img/kalaeva.svg" alt="Калаева Надежда">
-        </div>
-        <div class="contact-info">
-          <h3>Заместитель председателя СНО:</h3>
-          <p class="name">Калаева Надежда Александровна</p>
-          <p class="contact-label">Почта:</p>
-          <a href="mailto:kalaeva@sno.mephi.ru">NAKalaeva@mephi.ru</a>
-          <p class="contact-label">Телеграмм:</p>
-          <a href="https://t.me/lorwefg">@lorwefg</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-         
+          <div class="contact-card">
+            <div class="contact-photo">
+              <img src="../img/kalaeva.svg" alt="Калаева Надежда">
+            </div>
+            <div class="contact-info">
+              <h3>Заместитель председателя СНО:</h3>
+              <p class="name">Калаева Надежда Александровна</p>
+              <p class="contact-label">Почта:</p>
+              <a href="mailto:kalaeva@sno.mephi.ru">NAKalaeva@mephi.ru</a>
+              <p class="contact-label">Телеграмм:</p>
+              <a href="https://t.me/lorwefg">@lorwefg</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-  
         const modal = document.getElementById('contactsModal');
         const btn = document.getElementById('contactsBtn');
         const closeBtn = document.querySelector('.close-btn');
 
-        
         if (!modal || !btn || !closeBtn) {
           console.warn('Элементы модального окна не найдены в HTML');
           return;
         }
 
-       
         btn.addEventListener('click', function(e) {
           e.preventDefault();
           modal.classList.add('show');
           document.body.style.overflow = 'hidden'; 
         });
 
-        
         closeBtn.addEventListener('click', function() {
           modal.classList.remove('show');
           document.body.style.overflow = '';
         });
 
-        
         window.addEventListener('click', function(e) {
           if (e.target === modal) {
             modal.classList.remove('show');
@@ -174,12 +200,18 @@
           }
         });
 
-        
         document.addEventListener('keydown', function(e) {
           if (e.key === 'Escape' && modal.classList.contains('show')) {
             modal.classList.remove('show');
             document.body.style.overflow = '';
           }
+        });
+
+        document.querySelector('.scroll-arrow')?.addEventListener('click', function() {
+          window.scrollTo({
+            top: window.innerHeight,
+            behavior: 'smooth'
+          });
         });
       });
     </script>
